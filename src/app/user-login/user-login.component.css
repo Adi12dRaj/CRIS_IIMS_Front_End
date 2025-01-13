@@ -1,0 +1,84 @@
+
+.header
+{
+    justify-items: center;
+    margin-top: 1px;
+}
+
+.navbar{
+    background-color: rgb(96, 157, 250);
+}
+
+.login_button{
+    background-color: rgb(96, 157, 250);
+    color: white;
+}
+
+.login_button:hover{
+
+    color: white;
+    background-color: rgb(14, 139, 228);
+}
+
+.home_button{
+    background-color: white;
+    color: orange;
+}
+
+.home_button:hover{
+    background-color: beige;
+}
+
+.login{
+    background-color: rgba(194, 191, 186, 0.068);
+    justify-items: center;
+    width: 54%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 17px;
+    margin: 0 auto;
+    margin-top: 1%;
+    box-shadow: 2px 2px 6px rgb(97, 96, 96);
+}
+
+label{
+    padding: 5px;
+}
+
+.form_header{
+    justify-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+input{
+    display: inline-block;
+    padding: 1.5px;
+}
+
+button{
+    border-radius: 20px;
+    width: 30%;
+    padding: 5px;
+    margin: 4px;
+    
+}
+
+
+.login-home-btn{
+    text-align: center; 
+    padding: 1px;
+}
+
+footer{
+    justify-items: center;
+    background-color: rgb(96, 157, 250);
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    color: white;
+}

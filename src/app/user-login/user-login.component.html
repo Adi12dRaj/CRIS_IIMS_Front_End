@@ -1,0 +1,42 @@
+<div class="header">
+    <h3>Indian Railways E-Procurement System</h3>
+    <h3 style="color: green;">CRIS-MMIS</h3>
+</div>
+<nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">
+        <i class="fas fa-home"></i>
+      </a>
+    </div>
+  </nav>
+<div class="login">
+    <form (submit)="login()">
+        <div class="form_header">
+        <br>
+        <h5>Authenticate Yourself</h5>
+        <h5>(For Consignee Stores Users)</h5>
+        </div>
+        <div class="username" style="padding: 10px;">
+            <label for="username">Username:&nbsp; </label>
+            <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Enter Username Here" required>
+        </div>
+        <div class="password" style="padding: 10px;">
+            <label for="password">Password: &nbsp;</label>
+            <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Enter Password Here" required autocomplete="off">
+        </div>
+        <div class="login-home-btn">
+            <button class="login_button" type="submit">Login</button>
+            <button class="home_button">Home</button>
+        </div>
+    </form>
+    <p style="color: red; padding-top: 5px;">Password is case sensitive</p>
+    <p>For security reason we have logged your system IP.</p>
+    <button style="width: auto; background-color: rgb(96, 157, 250);"><a href="">Click Here To Reset Password Using DSC.</a></button>
+    <button style="width: auto; background-color: rgb(96, 157, 250);"><a href="">Click Here To Change Your Signing Certificate.</a> </button>   
+    <br>
+    <br>
+</div>
+
+<footer>
+    <p >Copyright 2024. All rights reserved.</p>
+</footer>
