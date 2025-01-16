@@ -1,0 +1,55 @@
+/* Navbar styles */
+.navbar {
+    background-color: rgb(96, 157, 250);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* To center the welcome message */
+  .navbar-brand {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+  }
+  
+  .welcome-message {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Profile button styles */
+  .profile-btn {
+    background-color: rgb(96, 157, 250);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+  
+  .profile-btn:hover {
+    background-color: rgb(14, 139, 228);
+  }
+  
+  /* Profile section */
+  .profile-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+  }
+  
+  h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  

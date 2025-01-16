@@ -9,11 +9,13 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { JwtInterceptor } from './jwt.interceptor';  // <-- Import JwtInterceptor
 import { AuthService } from './auth.service';  // <-- Import AuthService
 import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserLoginComponent,
+    DashboardComponent,
     // other components
   ],
   imports: [
@@ -23,6 +25,7 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: UserLoginComponent },
+      { path: 'dashboard', component: DashboardComponent }
       // other routes
     ])
   ],

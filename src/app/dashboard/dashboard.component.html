@@ -1,0 +1,15 @@
+<div class="navbar">
+    <div class="navbar-brand">
+      <h2 class="welcome-message">Welcome to the Dashboard</h2>
+    </div>
+    <button class="profile-btn" (click)="toggleProfile()">Profile</button>
+  </div>
+  
+  <div class="dashboard-content">
+  
+    <div *ngIf="profileVisible" class="profile-details">
+      <p><strong>Username:</strong> {{ username }}</p>
+      <p><strong>Token:</strong> {{ token }}</p>
+    </div>
+  </div>
+  

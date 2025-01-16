@@ -13,18 +13,25 @@ import { AuthService } from '../auth.service';
 export class UserLoginComponent {
   username: string='';
   password: string='';
-
+  loginMessage: string = 'Password is case sensitive';
+  loginMessageColor: string = 'red';
   constructor(private authService: AuthService, private router: Router) {}
 
   login() {
     this.authService.login(this.username, this.password).subscribe(
       (response) => {
         localStorage.setItem('jwtToken', response.token);  // Store token in local storage
-        this.router.navigate(['/dashboard']);  // Redirect after successful login
+        this.loginMessage = 'Login Successfully';
+        this.loginMessageColor = 'green'; // Success message
+        setTimeout(() => {
+          this.router.navigate(['/dashboard']); // Redirect after a short delay
+        }, 1000);
       },
       (error) => {
         console.error('Login failed', error);
-        alert('Login failed, please check your credentials');
+        this.loginMessage = 'Login Failed, please check your credentials';
+        this.loginMessageColor = 'red'; // Success message
+        // alert('Login failed, please check your credentials');
       }
     );
   }

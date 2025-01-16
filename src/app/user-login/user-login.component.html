@@ -29,7 +29,8 @@
             <button class="home_button">Home</button>
         </div>
     </form>
-    <p style="color: red; padding-top: 5px;">Password is case sensitive</p>
+    <p style="color: red; padding-top: 5px;"> <p *ngIf="loginMessage" [style.color]="loginMessageColor" style="padding-top: 5px;">{{ loginMessage }}</p>
+
     <p>For security reason we have logged your system IP.</p>
     <button style="width: auto; background-color: rgb(96, 157, 250);"><a href="">Click Here To Reset Password Using DSC.</a></button>
     <button style="width: auto; background-color: rgb(96, 157, 250);"><a href="">Click Here To Change Your Signing Certificate.</a> </button>   
